@@ -141,7 +141,7 @@
                     </div>
                     <h3 class="text-xl font-semibold text-slate-900 mb-4">2. Descreva o que vê</h3>
                     <p class="text-slate-700 text-base leading-relaxed font-light">
-                        Abra o exame e dite ou digite APENAS os achados na ordem que vier à cabeça direto no RIS, SUBSTITUINDO o texto abaixo de "ANÁLISE:" da máscara ou ABAIXO DA MÁSCARA, sem se preocupar com a estrutura
+                        Abra o exame e dite ou digite apenas os achados na ordem que vier à cabeça direto no RIS, sem se preocupar com a estrutura. Coloque esses dados abaixo do conteúdo da máscara ou substitua o texto abaixo de "ANÁLISE:"
                     </p>
                 </div>
 
@@ -210,44 +210,80 @@
 
     <section class="py-16 relative z-10">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="glass-panel rounded-3xl p-10 lg:p-14 border-l-4 border-sky-400 flex flex-col lg:flex-row items-center gap-12 shadow-sm">
-                
-                <div class="flex-1">
-                    <h3 class="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-4">
-                        <i class="fa-brands fa-windows text-sky-500"></i> O primeiro acesso (Alerta)
-                    </h3>
-                    <p class="text-lg text-slate-700 font-light leading-relaxed mb-8">
-                        Como o AeroLumia é um software novo, gratuito e de código aberto, a Microsoft ainda não o reconhece com um certificado comercial. Por isso, ao executá-lo pela primeira vez, o <strong>Windows SmartScreen</strong> exibirá uma tela azul de proteção
-                    </p>
-                    
-                    <div class="bg-white/60 rounded-2xl p-8 mb-8 shadow-sm">
-                        <h4 class="text-lg font-semibold text-slate-900 mb-5">Como liberar a execução:</h4>
-                        <ol class="space-y-4 text-slate-800 font-medium text-lg">
-                            <li class="flex items-center gap-4">
-                                <span class="flex items-center justify-center w-8 h-8 rounded-full bg-brand-100 text-brand-600 font-bold text-sm shrink-0">1</span>
-                                <div>Clique em <span class="underline decoration-slate-400 underline-offset-4 cursor-help" title="Texto sublinhado na tela azul">Mais informações</span></div>
-                            </li>
-                            <li class="flex items-center gap-4">
-                                <span class="flex items-center justify-center w-8 h-8 rounded-full bg-brand-100 text-brand-600 font-bold text-sm shrink-0">2</span>
-                                <div>Clique no botão <span class="bg-white border border-slate-200 px-3 py-1 rounded shadow-sm text-base">Executar assim mesmo</span></div>
-                            </li>
-                        </ol>
-                    </div>
+            <h2 class="text-4xl font-bold text-slate-900 mb-8 text-center">Os Primeiros Passos e a Segurança</h2>
+            <p class="text-xl text-slate-700 font-light text-center max-w-4xl mx-auto mb-16 leading-relaxed">
+                Como o AeroLumia é um projeto novo e <em>open-source</em> (sem assinatura de um certificado comercial pago), a Microsoft adota uma postura protetora. Você poderá ver até dois alertas normais na primeira utilização.
+            </p>
 
-                    <div class="flex items-start gap-4 text-emerald-800 bg-emerald-50/80 p-6 rounded-2xl border border-emerald-200/60 shadow-sm">
-                        <i class="fa-solid fa-shield-check text-3xl mt-1 text-emerald-500"></i>
-                        <p class="text-lg font-light leading-relaxed">
-                            <strong class="font-semibold">Fique tranquilo:</strong> O software é 100% seguro, livre de vírus e seu código-fonte está totalmente aberto no GitHub para auditoria de qualquer equipe de TI
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                
+                <div class="glass-panel rounded-3xl p-10 border-t-4 border-amber-400 flex flex-col shadow-sm">
+                    <div class="flex-1 flex flex-col">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+                            <i class="fa-solid fa-download text-amber-500"></i> 1. Durante o Download
+                        </h3>
+                        <p class="text-base text-slate-700 font-light leading-relaxed mb-6">
+                            O navegador <strong>Google Chrome</strong> geralmente baixa o arquivo direto. Já o <strong>Microsoft Edge</strong> pode bloquear o download informando que o arquivo "não é baixado com frequência".
                         </p>
+                        
+                        <div class="bg-white/60 rounded-2xl p-6 mb-8 flex-1">
+                            <h4 class="text-base font-semibold text-slate-900 mb-4">Se usar o Edge, siga os passos:</h4>
+                            <ol class="space-y-4 text-slate-800 font-medium text-sm sm:text-base">
+                                <li class="flex items-start gap-3">
+                                    <span class="flex items-center justify-center w-6 h-6 rounded-full bg-amber-100 text-amber-700 font-bold text-xs shrink-0 mt-0.5">1</span>
+                                    <div>Passe o mouse no aviso de download, clique nos <strong>três pontos (...)</strong> e selecione <strong>Manter</strong>.</div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="flex items-center justify-center w-6 h-6 rounded-full bg-amber-100 text-amber-700 font-bold text-xs shrink-0 mt-0.5">2</span>
+                                    <div>Na tela seguinte, clique na <strong>seta azul</strong> ao lado do botão Excluir e escolha <strong>Manter mesmo assim</strong>.</div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="w-full flex justify-center items-start h-[350px]">
+                        <img src="https://raw.githubusercontent.com/arielfwaquino/AeroLumia/main/edge_keep.png" 
+                             alt="Como liberar no Edge" 
+                             class="w-full max-w-[280px] max-h-full object-contain drop-shadow-xl rounded-md">
                     </div>
                 </div>
 
-                <div class="w-full lg:w-5/12 flex justify-center">
-                    <img src="https://raw.githubusercontent.com/arielfwaquino/AeroLumia/main/defender.png" 
-                         alt="Tela do Windows SmartScreen" 
-                         class="rounded-xl shadow-2xl border border-slate-200/60 w-full max-w-sm object-contain hover:scale-105 transition-transform duration-500">
+                <div class="glass-panel rounded-3xl p-10 border-t-4 border-sky-400 flex flex-col shadow-sm">
+                    <div class="flex-1 flex flex-col">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+                            <i class="fa-brands fa-windows text-sky-500"></i> 2. Ao Executar
+                        </h3>
+                        <p class="text-base text-slate-700 font-light leading-relaxed mb-6">
+                            Após baixar, independente do navegador, ao abrir o AeroLumia.exe pela primeira vez o <strong>Windows SmartScreen</strong> exibirá uma tela azul de proteção do sistema.
+                        </p>
+                        
+                        <div class="bg-white/60 rounded-2xl p-6 mb-8 flex-1">
+                            <h4 class="text-base font-semibold text-slate-900 mb-4">Como liberar a execução:</h4>
+                            <ol class="space-y-4 text-slate-800 font-medium text-sm sm:text-base">
+                                <li class="flex items-start gap-3">
+                                    <span class="flex items-center justify-center w-6 h-6 rounded-full bg-brand-100 text-brand-600 font-bold text-xs shrink-0 mt-0.5">1</span>
+                                    <div>Clique no texto sublinhado <strong>Mais informações</strong>.</div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="flex items-center justify-center w-6 h-6 rounded-full bg-brand-100 text-brand-600 font-bold text-xs shrink-0 mt-0.5">2</span>
+                                    <div>Um novo botão aparecerá. Clique em <strong>Executar assim mesmo</strong>.</div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="w-full flex justify-center items-start h-[350px]">
+                        <img src="https://raw.githubusercontent.com/arielfwaquino/AeroLumia/main/windows_run.png" 
+                             alt="Tela do Windows SmartScreen" 
+                             class="w-full max-w-[280px] max-h-full object-contain drop-shadow-xl rounded-md">
+                    </div>
                 </div>
                 
+            </div>
+
+            <div class="mt-10 flex items-start gap-4 text-emerald-800 bg-emerald-50/80 p-6 rounded-2xl border border-emerald-200/60 shadow-sm max-w-4xl mx-auto">
+                <i class="fa-solid fa-shield-check text-3xl mt-1 text-emerald-500"></i>
+                <p class="text-lg font-light leading-relaxed">
+                    <strong class="font-semibold">Fique tranquilo:</strong> O software é 100% seguro, livre de vírus e seu código-fonte está totalmente aberto no GitHub para auditoria rigorosa de qualquer equipe de TI hospitalar.
+                </p>
             </div>
         </div>
     </section>
@@ -263,19 +299,24 @@
                     </h3>
                     <ul class="space-y-8">
                         <li class="flex items-start gap-5 text-slate-800 font-normal text-lg">
-                            <i class="fa-solid fa-check mt-1 text-emerald-500"></i> 100% Gratuito e Código Aberto (Open Source)
+                            <i class="fa-solid fa-check mt-1 text-emerald-500"></i>
+                            <div>100% Gratuito e Código Aberto (Open Source)</div>
                         </li>
                         <li class="flex items-start gap-5 text-slate-800 font-normal text-lg">
-                            <i class="fa-solid fa-check mt-1 text-emerald-500"></i> Integração transparente com RIS/PACS
+                            <i class="fa-solid fa-check mt-1 text-emerald-500"></i>
+                            <div>Integração transparente com RIS/PACS</div>
                         </li>
                         <li class="flex items-start gap-5 text-slate-800 font-normal text-lg">
-                            <i class="fa-solid fa-check mt-1 text-emerald-500"></i> Não requer instalação (TI-Friendly)
+                            <i class="fa-solid fa-check mt-1 text-emerald-500"></i>
+                            <div>Não requer instalação (TI-Friendly)</div>
                         </li>
                         <li class="flex items-start gap-5 text-slate-800 font-normal text-lg">
-                            <i class="fa-solid fa-check mt-1 text-emerald-500"></i> Interface invisível: não atrapalha seus monitores de imagem
+                            <i class="fa-solid fa-check mt-1 text-emerald-500"></i>
+                            <div>Interface invisível: não atrapalha seus monitores de imagem</div>
                         </li>
                         <li class="flex items-start gap-5 text-slate-800 font-normal text-lg">
-                            <i class="fa-solid fa-check mt-1 text-emerald-500"></i> Em total conformidade com a segurança da informação
+                            <i class="fa-solid fa-check mt-1 text-emerald-500"></i>
+                            <div>Em total conformidade com a segurança da informação</div>
                         </li>
                     </ul>
                 </div>
@@ -286,10 +327,16 @@
                     </h3>
                     <ul class="space-y-8">
                         <li class="flex items-start gap-5 text-slate-800 font-normal text-lg">
-                            <i class="fa-solid fa-minus mt-1 text-amber-500"></i> Limite de 300 laudos por dia devido à cota de processamento da IA
+                            <i class="fa-solid fa-minus mt-1 text-amber-500"></i>
+                            <div>Limite de 300 laudos por dia devido à cota de processamento da IA</div>
                         </li>
                         <li class="flex items-start gap-5 text-slate-800 font-normal text-lg">
-                            <i class="fa-solid fa-minus mt-1 text-amber-500"></i> Ainda não possui integração com as frases padrão do serviço devido ao limite estrutural de tamanho do prompt da IA
+                            <i class="fa-solid fa-minus mt-1 text-amber-500"></i>
+                            <div>Ainda não possui integração com as frases padrão do serviço devido ao limite estrutural de tamanho do prompt da IA</div>
+                        </li>
+                        <li class="flex items-start gap-5 text-slate-800 font-normal text-lg">
+                            <i class="fa-solid fa-minus mt-1 text-amber-500"></i>
+                            <div><strong>Não suporta terminais remotos (Citrix):</strong> Em cenários de Home Office via Citrix, características inerentes à tecnologia desabilitam adequada formatação.</div>
                         </li>
                     </ul>
                 </div>
